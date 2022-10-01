@@ -14,7 +14,7 @@ color: #240D57;
         font-weight: 700;
         color: #240D57;
         background: -webkit-linear-gradient(45deg, rgb(132, 86, 236), rgb(232, 123, 248));
-            -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-fill-color: transparent;
 }
 

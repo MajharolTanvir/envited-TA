@@ -2,6 +2,7 @@ import React from "react";
 import banner from "../../Utilities/Landing page image.svg";
 import { MdCelebration } from "react-icons/md";
 import "./Home.css";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -22,12 +23,12 @@ const Home = () => {
           <p className="text-xs md:text-lg">across any social media.</p>
         </div>
       </div>
-      <div className="order-3 flex justify-center my-2">
-        <button className="btn-css w-full md:w-2/4 lg:w-3/4 py-2 text-center">
+      <Link to="/create" className="order-3 flex justify-center my-2">
+        <button className="btn-css w-full md:w-2/4 py-2 text-center">
           <MdCelebration className="text-yellow-400" />
           Create my event
         </button>
-      </div>
+      </Link>
     </div>
   );
 };
