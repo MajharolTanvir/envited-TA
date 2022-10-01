@@ -9,10 +9,30 @@ const CreateEvent = () => {
     reset,
     formState: { errors },
   } = useForm();
-  const onSubmit = (data) => console.log(data);
+  const onSubmit = (data) => {
+    const event = data.eventName;
+    const host = data.hostName;
+    const startTime = data.startTime;
+    const startDate = data.startDate;
+    const endTime = data.endTime;
+    const endDate = data.endDate;
+    const location = data.location;
+    const eventPhoto = data.eventPhoto[0].name;
+    console.log(
+      event,
+      host,
+      startTime,
+      startDate,
+      endTime,
+      endDate,
+      location,
+      eventPhoto
+    );
+    reset();
+  };
 
   return (
-    <div className="w-3/5 mx-auto">
+    <div className="lg:w-3/5 mx-auto">
       <div>
         <h6 className="font-bold text-center text-3xl mb-4">Create Event</h6>
       </div>
@@ -169,7 +189,7 @@ const CreateEvent = () => {
           <input
             type="file"
             placeholder="Last name"
-            className="border-2 border-indigo-500 w-full rounded-md py-3 px-2"
+            className="border-2 border-indigo-500 w-full rounded-md py-2 px-2"
             {...register("eventPhoto", {
               required: {
                 value: true,
