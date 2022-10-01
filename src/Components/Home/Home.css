@@ -1,0 +1,30 @@
+*{
+    font-family: Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+.first-last {
+font-weight: 700;
+color: #240D57;
+}
+
+.middle {
+        font-weight: 700;
+        color: #240D57;
+        background: -webkit-linear-gradient(45deg, rgb(132, 86, 236), rgb(232, 123, 248));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+}
+
+.btn-css{
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 10px;
+border-radius: 5px;
+background: linear-gradient(45deg, rgb(132, 86, 236), rgb(232, 123, 248));
+color: beige;
+
+}
