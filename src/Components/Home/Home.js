@@ -22,8 +22,14 @@ const Home = () => {
           </p>
           <p className="text-xs md:text-lg">across any social media.</p>
         </div>
+        <Link to="/create" className="order-3 hidden lg:flex justify-end my-2">
+          <button className="btn-css w-full md:w-2/4 py-2 text-center">
+            <MdCelebration className="text-yellow-400" />
+            Create my event
+          </button>
+        </Link>
       </div>
-      <Link to="/create" className="order-3 flex justify-center my-2">
+      <Link to="/create" className="order-3 lg:hidden flex justify-center my-2">
         <button className="btn-css w-full md:w-2/4 py-2 text-center">
           <MdCelebration className="text-yellow-400" />
           Create my event
