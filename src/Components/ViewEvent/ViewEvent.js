@@ -1,6 +1,7 @@
 import React from "react";
 import eventImage from "../../Utilities/Birthday-cake.png";
 import { IoCalendarOutline, IoLocationOutline } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 const ViewEvent = () => {
   return (
@@ -29,6 +30,12 @@ const ViewEvent = () => {
             <p>Suburb, State, Postcode</p>
           </div>
         </div>
+        <Link
+          to="/edit"
+          className="font-bold max-w-xs rounded-md my-4 py-3 btn-css"
+        >
+          Edit Event
+        </Link>
       </div>
       <div className="order-1 lg:order-2">
         <img src={eventImage} alt="" />
